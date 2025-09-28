@@ -25,3 +25,25 @@ body {
     font-family: jetbrains mono, monospace;
     font-size: 1rem;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh
+}
+
+#countBtn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-c);
+    border-radius: 0.5rem;
+    background-color: var(--prime);
+    color: var(--body-color);
+    font-family: jetbrains mono, monospace;
+    cursor: pointer;
+}
+
+#countBtn:active {
+    transform: scale(0.9);
+}
