@@ -1,29 +1,35 @@
 // -------------------------------------------------------------
+// Imports
+// -------------------------------------------------------------
+import menu from './components/menu.mjs';
+import search from './components/search.mjs';
+import movieCard from './components/movieCard.mjs';
+
+// Tests List 
+let movieList = [
+    {
+        title: "The Foundation",
+        poster: "https://resizing.flixster.com/ZBgHAnLHBZULeCH4xBS7UXuDs68=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzQ1YTA2NmYtMmQ5Ni00ZWNlLThhZTItOGUwZjEyMzFlNGMwLnBuZw==",
+        rating: "9.5",
+        favorite: true
+    }
+]
+
+// -------------------------------------------------------------
 // Stater
 // -------------------------------------------------------------
 const app = document.querySelector('#app');
-
-let count = 0;
 
 
 function main() {
     return (
         `
+        <nav>${menu()}${search()}</nav>
         <main>
-            <h1>Watch List</h1>
-            <div>
-                <h2>Count: <span>${count}</span></h2>
-                <button id="countBtn" onclick="countUp()">COUNT</button>
-            </div>
+            ${movieList.map((movie, index) => movieCard(movie.title, movie.rating, movie.poster, index))}
         </main>
         `
     )
-}
-
-// Functions
-function countUp() {
-    count++;
-    mainRender();
 }
 
 // -------------------------------------------------------------
@@ -39,4 +45,3 @@ mainRender();
 // -------------------------------------------------------------
 // Global Function
 // -------------------------------------------------------------
-window.countUp = countUp;

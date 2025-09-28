@@ -1,0 +1,85 @@
+.mainMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.mainMenu button {
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--box1);
+    color: lightgrey;
+    backdrop-filter: blur(6px);
+    font-size: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.mainMenu button:hover {
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0 2px 0 0 var(--prime);
+}
+
+.mainMenu button:active {
+    border-radius: 0.5rem;
+    color: var(--prime) !important;
+    box-shadow: 0px 0px 0.5rem 0 var(--prime);
+}
+
+#homeBtn {
+    color: var(--prime);
+}
+
+#homeBtn::after {
+    content: " Home";
+}
+
+#favBtn {
+    color: tomato;
+}
+
+#favBtn::after {
+    content: " Favorites";
+}
+
+#genreBtn {
+    color: goldenrod;
+}
+
+#genreBtn::after {
+    content: " Genres";
+}
+
+#addBtn {
+    color: olivedrab;
+}
+
+#addBtn::after {
+    content: " Add";
+}
+
+#settingsBtn {
+    color: cornflowerblue;
+}
+
+#settingsBtn::after {
+    content: " Settings";
+}
+
+@media screen and (max-width: 800px) {
+    .mainMenu {
+        position: absolute;
+        bottom: 0.5rem;
+        z-index: 100;
+    }
+
+    .mainMenu button::after {
+        display: none;
+    }
+
+    .mainMenu button:hover {
+        box-shadow: none;
+    }
+}

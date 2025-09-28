@@ -1,16 +1,13 @@
+/* CSS */
+@import url("./root.css");
+@import url("./menu.css");
+@import url("./search.css");
+@import url("./main.css");
+@import url("./movieCard.css");
+
+/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-:root {
-    font-size: 16px;
-
-    --body-bg: #202020;
-    --body-color: #fffafa;
-
-    --prime: #E62727;
-    --prime0: #FFD700;
-
-    --border-c: #929292
-}
 
 * {
     margin: 0;

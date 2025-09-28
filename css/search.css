@@ -1,0 +1,28 @@
+.searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchInput {
+    height: 2.5rem;
+    width: 20rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0rem 2.8rem 0rem 0.5rem;
+    background-color: var(--box1);
+    color: lightgrey;
+    font-size: 1rem;
+}
+
+#searchBtn {
+    position: absolute;
+    right: 0.5rem;
+    height: 2rem;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--prime);
+    color: var(--body-fg);
+}

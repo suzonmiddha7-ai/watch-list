@@ -1,0 +1,11 @@
+:root {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+
+    --body-bg: #252525;
+    --text-color: #fefefe;
+
+    --prime: #fa3838;
+    --border-c: #888888;
+    --box1: #14141465;
+}
