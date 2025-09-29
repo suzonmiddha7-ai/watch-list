@@ -1,0 +1,37 @@
+#genreContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 100;
+    outline: 1px solid var(--prime);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fa383849;
+    backdrop-filter: blur(1px);
+}
+
+#genreBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#genreBox button {
+    height: 2rem;
+    outline: 1px solid var(--prime);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--box1);
+    color: lightgrey;
+    backdrop-filter: blur(6px);
+    font-size: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+#genreBox button:hover {
+    background-color: rgba(255, 0, 0, 0.247);
+}

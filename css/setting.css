@@ -1,0 +1,28 @@
+#importExportBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem
+}
+
+#importExportBox button {
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--box1);
+    color: lightgrey;
+    backdrop-filter: blur(6px);
+    font-size: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+#importExportBox #importBtn {
+    background-color: var(--prime);
+    color: var(--body-fg);
+}
+
+#importExportBox #exportBtn {
+    background-color: olivedrab;
+    color: snow;
+}

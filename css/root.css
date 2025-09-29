@@ -9,3 +9,11 @@
     --border-c: #888888;
     --box1: #14141465;
 }
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}

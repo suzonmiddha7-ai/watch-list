@@ -1,0 +1,92 @@
+.addBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 20rem;
+    outline: 1px solid var(--border-c);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    background-color: var(--box1);
+    color: lightgrey;
+    backdrop-filter: blur(6px);
+}
+
+.addBoxContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.inputBox {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;  
+    padding: 0rem 0.5rem;
+    background-color: #303030;
+    color: lightgrey
+}
+
+.inputBox button {
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 0.5rem;  
+    background-color: #303030;
+    color: lightgrey
+}
+
+.rangeBox {
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem
+}
+
+.rangeBox #ratingValue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+    background-color: #303030;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;  /* Remove default Chrome/Safari style */
+  appearance: none;          /* Remove default style for other browsers */
+  height: 2px;
+  border-radius: 0.5rem;
+  background-color: lightgrey;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;  /* Remove default Chrome/Safari style */
+  appearance: none;          /* Remove default style for other browsers */
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--prime);
+  cursor: pointer;
+}
+
+#addBtnX {
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: olivedrab;
+    color: snow;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
