@@ -17,3 +17,13 @@ button {
 button:active {
     transform: scale(0.95);
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--prime);
+    border-radius: 0.5rem;
+}
