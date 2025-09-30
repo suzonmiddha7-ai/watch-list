@@ -5,10 +5,14 @@ export function removeMovie(list, id) {
     list.splice(id, 1);
 }
 
-// add/remove favorites
+// add favorites
 export function addToFavorites(list, id) {
-    // Toggle the favorite flag using the list passed in
-    list[id].favorite = !list[id].favorite;
+    list[id].favorite = true;
+}
+
+// remove favorites
+export function removeFromFavorites(list, id) {
+    list[id].favorite = false;
 }
 
 

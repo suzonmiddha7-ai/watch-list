@@ -4,6 +4,7 @@ export default function movieCard(title = "The Foundation", rating = "9.5", post
     <div class="movieCard">
         <div class="movieCardBtns">
             <button class="favBtn" onclick="addToFavorites(${index})"><i class="fa-solid fa-heart"></i></button>
+            <button class="unfavBtn" onclick="removeFromFavorites(${index})"><i class="fa-solid fa-heart-circle-xmark"></i></button>
             <button class="trashBtn" onclick="removeMovie(${index})" ><i class="fa-solid fa-trash"></i></button>
         </div>
         <div class="rating">${rating}</div>

@@ -54,6 +54,10 @@
     color: tomato;
 }
 
+.unfavBtn {
+    color: rgb(0, 132, 255);
+}
+
 .trashBtn {
     color: gold;
 }

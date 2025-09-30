@@ -8,7 +8,7 @@ import addBox from './components/addBox.mjs';
 import genreBox from "./components/genreBox.mjs";
 import setting from './components/setting.mjs';
 // Functions
-import { removeMovie, addToFavorites, showGenraContainer, showMovieType_x, importer, exporter  } from './components/utility.mjs';
+import { removeMovie, addToFavorites, removeFromFavorites, showGenraContainer, showMovieType_x, importer, exporter  } from './components/utility.mjs';
 
 // -------------------------------------------------------------
 // Movie List
@@ -201,7 +201,13 @@ window.removeMovie = function (index) {
 
 window.addToFavorites = function (index) {
     addToFavorites(movieList, index);
-    updateMain(); // stay on current view
+    updateMain();
+};
+
+window.removeFromFavorites = function (index) {
+    removeFromFavorites(movieList, index);
+    updateMain();
+    console.log("movieList", movieList)
 };
 
 // ------------------------------------------------------------------
